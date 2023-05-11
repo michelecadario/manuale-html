@@ -86,7 +86,6 @@
   position: absolute; right: 15px;
   text-align: center;
   font-size: large;
-
 }
 
 #content_tab{
@@ -147,6 +146,10 @@
   padding-left: 40px;
 }
 
+#attr-div, #tags {
+  border-radius: 10px;
+}
+
 button {
     border: none;
     padding: 5px;
@@ -189,4 +192,11 @@ code {
   border-radius: 5px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+h3 {
+  background-color: lightgray;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
 }
