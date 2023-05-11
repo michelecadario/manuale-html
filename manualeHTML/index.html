@@ -1,0 +1,452 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style/style.css">
+    <title> Manuale di HTML - Cadario</title>
+  </head>
+  <body>
+
+    <a href="#titolo">
+      <button id="top-btn">
+        <img src="images/freccia-top.png"
+            height="10px"
+            id="img-top">
+      </button>
+    </a>
+    
+    <div id="func-btn">
+      <button id="git">
+        <a href=""></a>
+        <img src="images/logo-github.png"
+             height="38px">
+      </button>
+
+      <button id="crediti">
+        <img src="images/account-group-outline.png"
+             height="30px">
+      </button>
+    </div>
+
+    <div id="div-elenco">
+      <ul id="elenco">
+            <br>
+            <header id="argomenti">Argomenti:</header>
+            <li><a href="#intro" title="Vai all'Introduzione"><button>Introduzione ad HTML</button></a></li>
+            <li><a href="#base_struct" title="Vai alla struttura base"><button>Struttura Base</button></a></li>
+            <li><a href="#tab-tags" title="Vai ai TAGs principali"><button>TAGs principali</button></a></li>
+
+            <li id="summary">
+              <details>
+                <summary><a href="#attributi" title="Vai agli attributi"><button>Attributi ai TAGs</button></a></summary>
+                  <div id="attr-div">
+                    <ul> 
+                      <li><a href="#attr-title" title="Vai all'attributo Title"><button>title</button></a></li>
+                      <li><a href="#attr-id" title="Vai all'attributo Id"><button>id</button></a></li>
+                      <li><a href="#attr-href" title="Vai all'attributo Href"><button>href</button></a></li>
+                      <li><a href="#attr-class" title="Vai all'attributo Class"><button>class</button></a></li>
+                      <li><a href="#attr-style" title="Vai all'attributo Style"><button>style</button></a></li>
+                    </ul> 
+                  </div>
+              </details>
+            </li>
+
+            <li><a href="#colori" title="Vai ai colori"><button>Colori HTML</button></a></li>
+            <li><a href="#formt-testo" title="Vai alla formattazione del testo"><button>Formattazione del Testo</button></a></li>
+            <li><a href="#container" title="Vai ai TAGs contenitori"><button>TAGs Container</button></a></li>
+            
+            <li id="summary2">
+              <details>
+                <summary><a href="#altri-tag" title="Altri tag"><button>Altri TAGs</button></a></summary>
+                <div id="tags"></div>
+              </details>
+            </li>
+          </ul>
+          
+          
+    </div>
+    
+    <table id="tab-main" border="0">
+      <tr>
+        <td id="content_tab" align="left">
+
+          <header id="titolo" align="center"><h1>Manuale di Utilizzo per HTML</h1></header>
+
+          <div id="intro">
+            <br><br>
+            <h3>Introduzione ad HTML</h3>
+            <p >
+              Il linguaggio di markup HTML venne sviluppato nei primi anni novanta da <em>Tim Berners-Lee</em> al <strong>CERN</strong> di Ginevra in Svizzera,
+              simultaneamente al protocollo <strong>HTTP</strong> <em>(HyperText Transfer Protocol)</em> dedicato al trasferimento di file in html inizialmente 
+              solamente all'interno del campus del CERN, successivamente con l'introduzione di queste due teconologie, nacque il <strong>WWW</strong> 
+              <em>(world wide web)</em>
+              HTML è l'acronimo di <em> HyperText Markup Language</em> e, come si intende dall'acronimo, viene considerato un
+              linguaggio di <strong>markup</strong> e non di programmazione. L'obbiettivo di questo linguaggio dunque non è quello
+              di costruire programmi che risolvano un determinato problema, il fine di HTML è invece quello 
+              di indicare la posizione di elementi all'interno di una pagina attraverso appositi marcatori, detti <strong>TAGs</strong>.
+              Questi elementi devono essere inclusi tra parentesi angolari (e.g. <code>< img ></code> è il tag per un'immagine).
+            </p>
+            <p><img src="images/immagine-html1.png" 
+                   alt="Esempio Linguaggio HTML" 
+                   title="Esempio Linguaggio HTML"
+                   id="immagine1" 
+                   width="1000px"></p>
+              
+              <p><img src="images/risultato-immagine1.png" 
+                   alt="Risultato della porzione di Codice"
+                   title="Risultato della porzione di Codice"
+                   id="immagine1"
+                   height="250px">  </p>
+              
+          </div>
+          <hr>
+          <div id="base_struct">
+            <br>
+            <h3>Struttura Base di una pagina HTML</h3>
+            <p>
+              Per strutturare una pagina HTML, come nella maggior parte dei linguaggi, si necessita
+              di una <em>struttura base</em> per definire i tag principali e inserire elementi nella pagina. <br>
+              La struttura tipica delle pagine in questo formato file è:
+            </p>
+            <img src="images/struttura-base.png" 
+                 alt="Struttura Base della Pagina"
+                 title="Struttura Base della Pagina"
+                 height="220px"
+                 hspace="30">
+            <p>
+              Questa porzione di codice, una volta eseguita, restituirà una semplice pagina bianca priva di elementi.
+              Per "riempire" la pagina si necessita dei tag, quelli principali sono:
+            </p>
+            <table id="tab-tags" class="table" cellspacing="0" align="center">
+              <tr>
+                <th width="30%">TAGs</th>
+                <th>Utilizzo</th>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< html ></strong></td>
+                <td>Questo tag <strong> racchiude l'intero documento HTML</strong>, e principalmente comprende il document header, 
+                  rappresentato dai tags <code>< head > </code>...<code>< /head > </code> ed il document body, 
+                  rappresentato dai tags <br><code> < body ></code>...<code>< body ></code>.</td>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< head ></strong></td>
+                <td>Indica il <strong>document header</strong>, può contenere all'interno altri tags HTML 
+                  come <code>< title ></code>, <code>< meta ></code> ecc.
+                  <img src="images/esempio-tag-head.png" 
+                       alt="Esempio del tag head"
+                       title="Esempio del tag head"
+                       height="80px">
+                </td>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< link ></strong></td>
+                <td>Il tag <code> < link ></code> viene usato nelle pagine per creare un collegamento 
+                  tra il file HTML e lo <em>stylesheet</em> <strong>CSS</strong> (cascading style sheet). Attraverso il
+                  file CSS è possibile <strong>personalizzare</strong> la pagina, aggiungendo elementi decorativi
+                  oppure colorando alcune parti del documento. E' possibile utilizzare CSS anche nello stesso file HTML, 
+                  attraverso il tag < <strong> style </strong> > , all'interno di questo tag la sintassi sarà la stessa del CSS.
+                  <img src="images/esempio-tag-link.png" 
+                       alt="Esempio del tag link"
+                       title="Esempio del tag link"
+                       height="20px">
+                </td>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< title ></strong></td>
+                <td>Il tag <code> < title ></code> è utilizzato all'interno del tag <code> < head ></code> 
+                  per indicare il <strong>titolo</strong> della scheda
+                  <img src="images/esempio-tag-title.png" 
+                       alt="Esempio del tag title"
+                       title="Esempio del tag title"
+                       height="20px">
+                </td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< body ></strong></td>
+                <td>Rappresenta il <strong>corpo</strong> del documento HTML e contiene altri tags come 
+                  <code>< h1 ></code>, <code> < div ></code>, <code> < p ></code>, ecc.</td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< h1 ... 6></strong></td>
+                <td>Da <strong><code> < h1 ></code> a <code>< h6 ></code></strong> sono tag per impostare il <strong>titolo</strong> del documento. 
+                    Sono utilizzati solitamente in ordine
+                    <strong>crescente</strong>: <code> < h1 ></code> crea un titolo molto grande, di solito quello principale della pagina, <code>< h6 ></code> crea il titolo più
+                    piccolo, utilizzato solitamente per scrivere sottotitoli nei paragrafi.
+                    <img src="images/esempio-tag-h1.png" 
+                      alt="Esempio del tag h1"
+                      title="Esempio del tag h1"
+                      height="20px">
+                  </td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< p ></strong></td>
+                <td>Il tag <code>< p ></code> viene utilizzato per scrivere dei paragrafi nella pagine. Tra due tag <code>< p ></code>
+                    si formerà uno <strong>spazio</strong> di alcuni px per separare i due paragrafi, questo tag può dunque essere usato
+                    anche semplicemente per <strong>distanziare</strong> elementi quali tabelle, elenchi, immagini, ecc.
+                </td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< img ></strong></td>
+                <td>Questo tag viene usato per inserire immagini nella pagina HTML, la sorgente può essere
+                    sia un file nel computer, sia il link di un'immagine trovata sul web.
+                </td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< a ></strong></td>
+                <td>Il tag <code>< a ></code> (<strong>anchor</strong>) viene usato nelle pagine per creare un collegamento 
+                  <strong>ipertestuale</strong> nel documento, o anche esterno. Può essere usato per linkare
+                  immagini sul pc, immagini online, link di siti o paragrafi nello stesso documetno attraverso 
+                  l'attributo id
+                  <img src="images/esempio-tag-a.png" 
+                      alt="Esempio del tag a"
+                      title="Esempio del tag a"
+                      height="20px">
+                </td>
+              </tr>
+            </table>
+            <p>
+              Chiaramente nel linguaggio HTML sono presenti centinaia di marcatori che permettono di fare 
+              altrettante cose e inserire altrettanti elementi. Ad esempio, si possono fare <strong>elenchi puntati</strong> con
+              il tag <code>< ul ></code> <code> < li  ></code>...<code>< /li ></code> <code>< /ul ></code>, oppure tabelle con il tag <code>< table > 
+              </code> <code>< tr ></code> <code>< td ></code>...<code>< /td ></code> <code>< /tr ></code> <code>< /table ></code>,
+              dove <code>table</code> identifica tutta la tabella, <code>tr</code> identifica una riga e <code>td</code> 
+              identifica una o più colonne in un <code>tr</code> (<a href="#eg-table">Esempio tabella</a>).
+              Ce ne sono anche di più particolari come il tag <code>< marquee ></code> che crea un testo scorrevole nella pagina HTML. 
+            </p>
+            <marquee direction="left" width="30%" align="center"> Esempio del tag < marquee ></marquee>
+          </div>
+          <br>
+          <hr>
+          <div id="attributi">
+            <br>
+            <h3>Gli Attributi ai TAGs</h3>
+            
+            <p>
+              Per rendere ancora più personalizzabili e vari gli elementi e i marcatori nella propria pagina, 
+              sono disponibili i cosiddetti <strong>attributi</strong>.
+              Un'attributo viene collocato nel tag di apertura ed è composto da un <strong>nome</strong> e un <strong>valore</strong>.
+            </p>
+
+              <img src="images/attributi-tab.png" 
+                   alt="Esempio Attributi"
+                   title="Esempio Attributi al tag table"
+                   height="125px">
+
+              <p>
+                Il <strong>nome</strong> indica la propietà da impostare all'elemento <em>(<code>align</code>)</em>, 
+                mentre il <strong>valore</strong> indica il valore da attribuire alla propietà <em>(<code>center</code>)</em>.
+              </p> 
+              <h4>Attributi Fondamentali: </h4>
+              <p>
+                Nel linguaggio HTML esistono due gruppi principali: attributi di base <strong>(core)</strong> e attributi per la 
+                <strong>gestione degli eventi</strong>. 
+                Gli attributi core servono puramente per la rappresentazione grafica di elementi e alcuni aspetti riguardo
+                l'interfaccia utente della pagina. Alcuni esempio sono:
+
+                <p id="attr-title">
+                  <strong>Title</strong><br>
+                  L'attributo <code>title</code> contiene informazioni aggiuntive riguardo il contenuto di un elemento,
+                  il testo contenuto tra gli apici di questo attributo verrà visualizzato dopo che si stanzia con
+                  il cursore per circa 1 secondo sull'elemento a cui viene assegnata la propietà.
+                  <p>
+                    <img src="images/esempio-attr-title.png" 
+                       alt="Esempio attributo TITLE"
+                       title="Esempio dell'attributo title"
+                       height="25px"
+                       hspace="20">
+                  </p>
+                  <p>
+                    <img src="images/risultato-attr-title.png" 
+                         alt="Risultato title"
+                         title="Risultato dell'attributo title"
+                         height="70px"
+                         hspace="30">
+                  </p>
+
+                </p>
+                <p id="attr-id">
+                  <strong>Id</strong><br>
+                  L'attributo <code>id</code> è quasi indispensabile nella costruzione di pagine in HTML dato che permette di 
+                  <strong>identificare univocamente</strong> l'elemento a cui viene assegnata la propietà. Viene infatti utilizzato
+                  in quasi tutti i siti web per assegnare propietà in nello <em>stylesheet in <strong>CSS</strong></em>, dove viene riportato
+                  l'id dell'elemento preceduto dal simbolo '#'. Oppure, viene anche utilizzato per 
+                  implementare un sistema di <em>navigazione interna</em> alla pagina.
+                  <p>
+                    <img src="images/esempio-id.png"
+                         alt="Esempio attributo ID"
+                         title="Esempio dell'attributo ID"
+                         hspace="20">
+                  </p>
+                  <p>
+                    <img src="images/utilizzo-idCSS.png"
+                         alt="Esempio utilizzo attributo ID"
+                         title="Esempio dell'utilizzo attributo ID"
+                         hspace="30">
+                  </p>
+                </p>
+
+                <p id="attr-href">
+                  <strong>Href</strong><br>
+                  L'attributo <code>href</code> permette di <strong>collegare elementi</strong> all'interno della pagina o esterni a questa <strong>(URL)</strong>.
+                  Ad esempio, può essere usata per implementare un sistema di <em>navigazione interna</em> alla pagina, servendosi
+                  dell'attributo <code>id</code> e inserendo poi nell'attributo <code>href</code> il nome dell'id preceduto da '#'. (e.g. <code>href="#*il tuo id*"</code>).
+                  Oppure è possibile creare un <em>sito multipagina</em>, inserendo nell'attributo <code>href</code> il percorso del file .html della pagina di destinazione.
+                
+                  <p>
+                    <img src="images/esempio-attr-title.png" 
+                       alt="Esempio attributo TITLE"
+                       title="Esempio dell'attributo title"
+                       height="25px"
+                       hspace="20"> 
+                  </p>
+
+                  Nell'immagine soprastante, l'attributo <code>href</code> viene usato per il sistema di navigazione, in particolare
+                  il button è collegato ad una sezione della pagina a cui viene assegnato l'id intro.
+                  <br>
+                  Se invece si desidera fare un collegamento con un <strong>URL</strong>, basta semplicemente inserire il link 
+                  come argomento dell'attributo <code>href</code> (al posto di '#intro'). Un target che può risultare 
+                  molto utile durante l'utilizzo el tag <code>< a ></code>, e dunque anche dell'attributo <code>href</code>, è l'attributo
+                  <code>target</code>, questo specifica dove aprire l'URL inserito nell'<code>href</code> (e.g. <code>target="_blank"</code> apre l'URL su un altra scheda). 
+                </p>
+                <p id="attr-class">
+                  <strong>Class</strong><br>
+                  <code>Class</code> viene usato nelle pagine HTML per assegnare ad un elemento una classe dichiarata nel file
+                  CSS o nel tag <code>style</code> ad inizio file. Agli elementi a cui verrà assegnata la stessa classe, verranno
+                  applicate le stesse propietà dichiarate nella classe in CSS.
+                  
+                  <p>
+                    <img src="images/esempio-classeCSS.png" 
+                         alt="Esempio Classe"
+                         title="Esempio classe in CSS"
+                         height="200px">
+                  </p>
+                  <p>
+                    <img src="images/utilizzo-classe-CSS.png" 
+                         alt="Utilizzo della Classe"
+                         title="Esempio di utilizzo di una classe"
+                         height="25px">
+                  </p>
+                  
+                </p>
+                <p id="attr-style">
+                  <strong>Style</strong><br> 
+                  L'attributo <code>style</code> funziona come l'omonimo tag, all'interno di questo attributo
+                  infatti vengono riportare <strong>propietà grafiche</strong> di un elemento con sintassi del CSS.
+                  L'unica differenza rispetto al tag consiste nella posizione. Infatti, mentre il tag style solitamente 
+                  viene posto nell'head o a fine documento, l'attributo viene posto <strong>nel tag di apertura</strong> dell'elemento interessato.
+                  Un esempio può essere una tabella:
+                  <p>
+                    <img src="images/esempio-style-tab.png"
+                         alt="Esempio Style"
+                         title="Esempio dell'attributo style"
+                         height="160px"
+                         hspace="20"
+                         id="eg-table">
+                  </p>
+                  <p>
+                    <img src="images/risultato-style.png"
+                         alt="Risultato Style"
+                         title="Risultato dell'attributo style"
+                         height="120px"
+                         hspace="20">
+                  </p>
+                </p>
+              </p>
+          </div>
+          <hr>
+          <div id="colori">
+            <br>
+            <h3> La definizione dei colori in HTML </h3>
+
+            <p>
+              Ovviamente, i colori sono molto importanti durante la strutturazione di una pagina web in html, sia 
+              per rendere più accattivante il sito, sia per mettere in risalto elementi importanti della pagina.
+              <br> In HTML i colori vengono definiti con degli attributi ai tag dell'elemento di cui si vuole
+              definire il colore. Partendo da quello più basilare, il tag <code>< body ></code> disponde
+              dell'attributo <code>bgcolor</code> per impostare il colore di sfondo della pagina, <code>text</code>
+              per impostare il colore del testo, <code>alink</code> e <code>vlink</code> per i link ipertestuali
+              rispettivamente attivi e gia visitati, mentre l'attributo <code>link</code> imposta il colore dei
+              link ancora da visitare.
+              <p>
+                <img src="images/esempio-attributiColori.png" 
+                     alt="Esempio attributi colori"
+                     title="Esempio di utilizzo degli attributi dei colori"
+                     height="160px">
+              </p>
+
+              In questo linguaggio di markup ci sono <strong>tre modi</strong> principali per indicare
+              il valore di un colore. Può essere utilizzato il <strong>nome del colore</strong>, 
+              il <strong>codice in esadecimale</strong> (e.g. #ffffff è bianco), oppure il <strong>colore
+                decimale o il valore in percentuale</strong> che deve essere specificato nelle parentesi dopo <code>rgb()</code>.
+            </p>
+          </div>
+          <hr>
+          <div id="formt-testo">
+            <br>
+            <h3> I formattatori del testo </h3>
+            <p>
+              Anche nel linguaggio HTML come in quasi la totalita degli editor di testo è pososibile formattare
+              il testo che sarà mostrato all'interno della pagina web. In particolare vi sono alcuni tag per personalizzare
+              a piacere il testo. 
+              <br>
+              <h4>Testo in Grassetto</h4>
+              Per rendere del testo in grassetto basta inserire questo nel tag <code>< b ></code>. Questo tag
+              è molto simile a <code>< strong ></code>, l'unica differenza tra questi due tag, è che nel secondo
+              non viene solamente evidenziato il testo, ma viene aggiunto a questo anche enfasi e importanza.
+              <p>
+                <img src="images/esempio-grassetto.png" 
+                     alt="Esempio tag <b> e <strong>"
+                     title="Esempio di utilizzo del tag <b> e <strong>"
+                      height="90px">
+              </p>
+
+              <h4>Testo in Corsivo Italic</h4>
+              Per rendere del testo in corsivo (o italico) basta inserire questo tra i tag <code>< i ></code>.
+              <p>
+                <img src="images/esempio-italic.png" 
+                     height="35px"
+                     hspace="10"
+                     alt="Esempio testo corsivo">
+              </p>
+
+              <h4>Testo Sottolineato</h4>
+              Per sottolineare del testo basta inserire questo tra i tag <code>< u ></code>.
+              <p>
+                <img src="images/esempio-sottolineato.png"
+                     alt="Esempio testo sottolineato"
+                     title="Esempio testo sottolineato"
+                     height="37px">
+              </p>
+
+              <h4>Testo Sbarrato</h4>
+              Per rendere sbarrato del testo basta inserire questo tra i tag <code>< strike ></code>.
+              <p>
+                <img src="images/esempio-sbarrato.png"
+                     alt="Esempio testo sbarrato"
+                     height="35px" hspace="10">
+              </p>
+              Oltre a questi tag che sono quelli principali e più utilizzati, ce ne sono di altri
+              come <code>superscript</code> o <code>subscript</code>. Questi tag servono per 
+              scrivere i testi rispettivamente in apice o pedice. Oppure ancora ci sono i tag
+              <code>big</code> e <code>small</code> per scrivere i testi più grandi o piccoli rispetto 
+              al carattere dei paragrafi.
+            </p>
+          </div>
+          <hr>
+          <div id="container">
+            <br>
+            <h3> I tag Container </h3>
+          </div>
+          <hr>
+          <div id="altri-tag">
+            <br>
+            <h3>Altri TAGs del linguaggio HTML</h3>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

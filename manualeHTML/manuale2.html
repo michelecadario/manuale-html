@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="manualeCSS.css">
+    <title> Manuale di HTML - Cadario</title>
+  </head>
+  <body>
+    
+    
+    <ul id="elenco">
+      <br>
+      <header id="argomenti">&ensp;&ensp;Argomenti:</header>
+      <li><a href="#intro"><button>Introduzione ad HTML</button></a></li>
+      <li><a href="#base_struct"><button>Struttura Base</button></a></li>
+      <li><a href="#tab-tags"><button>TAGs principali</button></a></li>
+      <li><a href="#attributi"><button>Attributi ai TAGs</button></a></li>
+    </ul>
+
+    <table id="tab-main" border="0">
+      <tr>
+        <td id="content_tab" align="left">
+          <header id="titolo" align="center"><h1>Manuale di Utilizzo per HTML</h1></header>
+
+          <div id="intro">
+            <h3>Introduzione ad HTML</h3>
+            <p >
+              HTML è l'acronimo di <em> HyperText Markup Language</em> e, come si intende dall'acronimo, viene considerato un
+              linguaggio di <strong>markup</strong> e non di programmazione. L'obbiettivo di questo linguaggio dunque non è quello
+              di costruire programmi che risolvano un determinato problema, il fine di HTML è invece quello 
+              di indicare la posizione di elementi all'interno di una pagina attraverso appositi marcatori, detti <strong>TAGs</strong>.
+              Questi elementi devono essere inclusi tra parentesi angolari (ad esempio, < img > è il tag per un'immagine).
+            </p>
+              <img src="immagine-html1.png" 
+                   alt="Esempio Linguaggio HTML" 
+                   title="Esempio Linguaggio HTML"
+                   id="immagine1" 
+                   width="1000px">
+            <p id="risultatoimg1">
+              Risultato dell'esempio di utilizzo del tag <strong>< img ></strong> <br>(gli attributi utilizzati servono per centrare l'immagine):
+            </p>
+              <img src="risultato-immagine1.png" 
+                   alt="Risultato della porzione di Codice"
+                   title="Risultato della porzione di Codice"
+                   id="immagine1"
+                   height="250px">  
+          </div>
+          <hr>
+          <div id="base_struct">
+            <h3>Struttura Base di una pagina HTML</h3>
+            <p>
+              Per strutturare una pagina HTML, come nella maggior parte dei linguaggi, si necessita
+              di una struttura base per definire i tag principali e inserire elementi nella pagina.
+            </p>
+            <img src="struttura-base.png" 
+                 alt="Struttura Base della Pagina"
+                 title="Struttura Base della Pagina"
+                 height="220px">
+            <p>
+              Questa porzione di codice, una volta eseguita, restituirà una semplice pagina bianca priva di elementi.
+              Per "riempire" la pagina si necessita dei tag, quelli principali sono:
+            </p>
+            <table id="tab-tags" border="1" cellspacing="0" align="center">
+              <tr>
+                <th width="30%">TAGs</th>
+                <th>Utilizzo</th>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< html ></strong></td>
+                <td>Questo tag <strong> racchiude l'intero documento HTML</strong>, e principalmente comprende il document header, 
+                  rappresentato dai tags < head >...< /head > ed il document body, 
+                  rappresentato dai tags < body ...< /body >.</td>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< head ></strong></td>
+                <td>Indica il <strong>document header</strong>, può contenere all'interno altri tags HTML come < title >, < meta > ecc.</td>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< link ></strong></td>
+                <td>Il tag < link > viene usato nelle pagine per creare un collegamento 
+                  tra il file HTML e lo <em>stylesheet</em> <strong>CSS</strong> (cascading style sheet). Attraverso il
+                  file CSS è possibile <strong>personalizzare</strong> la pagina, aggiungendo elementi decorativi
+                  oppure colorando alcune parti del documento. E' possibile utilizzare CSS anche nello stesso file HTML, 
+                  attraverso il tag <strong> < style ></strong>, all'interno di questo tag la sintassi sarà la stessa del CSS.
+                </td>
+              </tr>
+              <tr>
+                <td id="td-tag"><strong>< html ></strong></td>
+                <td>Il tag < title > è utilizzato all'interno del tag < head > per indicare il <strong>titolo</strong> della scheda</td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< body ></strong></td>
+                <td>Rappresenta il <strong>corpo</strong> del documento HTML e contiene altri tags come < h1 >, < div >, < p ></td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< h1 ... 6></strong></td>
+                <td>Da <strong>h1 a h6</strong> sono tag per impostare il <strong>titolo</strong> del documento. 
+                    Sono utilizzati solitamente in ordine
+                    <strong>crescente</strong>: h1 crea un titolo molto grande, di solito quello principale della pagina, h6 crea il titolo più
+                    piccolo, utilizzato solitamente per scrivere sottotitoli nei paragrafi.
+                </td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< p ></strong></td>
+                <td>Il tag <strong>p</strong> viene utilizzato per scrivere dei paragrafi nella pagine. Tra due tag < p > 
+                    si formerà uno <strong>spazio</strong> di alcuni px per separare i due paragrafi, questo tag può dunque essere usato
+                    anche semplicemente per <strong>distanziare</strong> elementi quali tabelle, elenchi, immagini, ecc.
+                </td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< img ></strong></td>
+                <td>Questo tag viene usato per inserire immagini nella pagina HTML, la sorgente può essere
+                    sia un file nel computer, sia il link di un'immagine trovata sul web.
+                </td>
+              </tr>
+
+              <tr>
+                <td id="td-tag"><strong>< a ></strong></td>
+                <td>Il tag < a > (<strong>anchor</strong>) viene usato nelle pagine per creare un collegamento 
+                  <strong>ipertestuale</strong> nel documento, o anche esterno. Può essere usato per linkare
+                  immagini sul pc, immagini online, link di siti o paragrafi nello stesso documetno attraverso 
+                  l'attributo id
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          
+
+          <div id="altri-tags">
+            <p>
+              Chiaramente nel linguaggio HTML sono presenti migliaia di marcatori che permettono di fare 
+              altrettante cose e inserire altrettanti elementi. Ad esempio, si possono fare <strong>elenchi puntati</strong> con
+              il tag < ul > < li >...< /li > < ul >, oppure tabelle con il tag < table > < tr > < td >...< /td > < /tr > < /table >.
+              Ce ne sono anche di molto particolari come il tag < marquee > che crea un testo scorrevole nella pagina HTML. 
+            </p>
+          </div>
+
+          <hr>
+
+          <div id="attributi">
+            <h3>Gli Attributi ai TAGs</h3>
+            <p>
+              Per rendere ancora più personalizzabili e vari gli elementi e i marcatori nella propria pagina, 
+              sono disponibili i cosiddetti <strong>attributi</strong>.
+              Un'attributo viene collocato nel tag di apertura ed è composto da un <strong>nome</strong> e un <strong>valore</strong>.
+            </p>
+
+              <img src="attributi-tab.png" 
+                   alt="Esempio Attributi"
+                   title="Esempio Attributi al tag table"
+                   height="100px">
+              <p id="testo-attributi">
+                Esempio di attributi al tag <strong>< table ></strong>. <br>
+                L'attributo <strong>id</strong> serve per identificare univocamente la tabella,<br>
+                l'attributo <strong>border</strong> serve per assegnare un bordo alla tabella,<br>
+                l'attributo <strong>cellspacing</strong> serve per definire lo spazio tra le celle,<br>
+                mentre l'attributo <strong>align</strong> serve per allineare la tabella, in questo caso al centro.
+              </p>
+
+              <p>
+                Il <strong>nome</strong> indica la propietà da impostare all'elemento <em>(align)</em>, 
+                mentre il <strong>valore</strong> indica il valore da attribuire alla propietà <em>(center)</em>.
+
+              </p>
+            </p>
+          </div>
+          
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
