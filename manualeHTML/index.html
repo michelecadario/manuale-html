@@ -15,7 +15,7 @@
     
     <div id="func-btn">
       <a 
-      href="https://github.com/michelecadario/manuale-html/tree/2bba5e2224797e7be04627d91a65a7b6ea9aa645/manualeHTML"
+      href="https://github.com/michelecadario/manuale-html/tree/45e1bba6dc9d7ffb5376f6ae7a9e55d6adb1f212/manualeHTML"
       target="_blank">
         <button id="git">
           <img src="images/logo-github.png"
@@ -33,6 +33,7 @@
       <ul id="elenco">
             <br>
             <header id="argomenti">Argomenti:</header>
+            <br>
             <li><a href="#intro" title="Vai all'Introduzione"><button>Introduzione ad HTML</button></a></li>
             <li><a href="#base_struct" title="Vai alla struttura base"><button>Struttura Base</button></a></li>
             <li><a href="#tab-tags" title="Vai ai TAGs principali"><button>TAGs principali</button></a></li>
@@ -42,11 +43,11 @@
                 <summary><a href="#attributi" title="Vai agli attributi"><button>Attributi ai TAGs</button></a></summary>
                   <div id="attr-div">
                     <ul> 
-                      <li><a href="#attr-title" title="Vai all'attributo Title"><button>title</button></a></li>
-                      <li><a href="#attr-id" title="Vai all'attributo Id"><button>id</button></a></li>
-                      <li><a href="#attr-href" title="Vai all'attributo Href"><button>href</button></a></li>
-                      <li><a href="#attr-class" title="Vai all'attributo Class"><button>class</button></a></li>
-                      <li><a href="#attr-style" title="Vai all'attributo Style"><button>style</button></a></li>
+                      <li><a href="#attr-title" title="Vai all'attributo Title"><button><code>title</code></button></a></li>
+                      <li><a href="#attr-id" title="Vai all'attributo Id"><button><code>id</code></button></a></li>
+                      <li><a href="#attr-href" title="Vai all'attributo Href"><button><code>href</code></button></a></li>
+                      <li><a href="#attr-class" title="Vai all'attributo Class"><button><code>class</code></button></a></li>
+                      <li><a href="#attr-style" title="Vai all'attributo Style"><button><code>style</code></button></a></li>
                     </ul> 
                   </div>
               </details>
@@ -59,7 +60,34 @@
             <li id="summary2">
               <details>
                 <summary><a href="#altri-tag" title="Altri tag"><button>Altri TAGs</button></a></summary>
-                <div id="tags"></div>
+                <div id="tags">
+                  <ul>
+                    <li><a href="#tag-hr"><button><code>< hr ></code></button></a></li>
+                    <li><a href="#tag-brr"><button><code>< br ></code></button></a></li>
+                    <li><a href="#tag-addr"><button><code>< address ></code></button></a></li>
+                    <li><a href="#tag-code"><button><code>< code ></code></button></a></li>
+                    <li><a href="#tag-em"><button><code>< em ></code></button></a></li>
+                    <li><a href="#tag-i"><button><code>< i ></code></button></a></li>
+                    <li><a href="#tag-kbd"><button><code>< kbd ></code></button></a></li>
+                    <li><a href="#tag-pre"><button><code>< pre ></code></button></a></li>
+                    <li><a href="#tag-big"><button><code>< big ></code></button></a></li>
+                    <li><a href="#tag-small"><button><code>< small ></code></button></a></li>
+                    <li><a href="#tag-sup"><button><code>< sup ></code></button></a></li>
+                    <li><a href="#tag-sub"><button><code>< sub ></code></button></a></li>
+                    <li><a href="#tag-form"><button><code>< form ></code></button></a></li>
+                    <li><a href="#tag-inpt"><button><code>< input ></code></button></a></li>
+                    <li><a href="#tag-btn"><button><code>< button ></code></button></a></li>
+                    <li><a href="#tag-lbl"><button><code>< label ></code></button></a></li>
+                    <li><a href="#tag-frm"><button><code>< frame ></code></button></a></li>
+                    <li><a href="#tag-ol"><button><code>< ol ></code></button></a></li>
+                    <li><a href="#tag-ul"><button><code>< ul ></code></button></a></li>
+                    <li><a href="#tag-li"><button><code>< li ></code></button></a></li>
+                    <li><a href="#tag-tbl"><button><code>< table ></code></button></a></li>
+                    <li><a href="#tag-thd"><button><code>< thead ></code></button></a></li>
+                    <li><a href="#tag-tbdy"><button><code>< tbody ></code></button></a></li>
+                    <li><a href="#tag-scrpt"><button><code>< script ></script></code></button></a></li>
+                  </ul>
+                </div>
               </details>
             </li>
           </ul>
@@ -442,6 +470,42 @@
           <div id="container">
             <br>
             <h3> I tag Container </h3>
+            <p>
+              Il tag <code>< div ></code> definisce un blocco che manda a capo il testo, le immagini o ciò
+              che ci sia all'interno. Però, a differenza ad esempio del tag <code>< p ></code> non lascia degli spazi 
+              prima e dopo il div. 
+              Il <code>div</code> grazie principalmente alla sua enorme versatilità ed utilità durante 
+              la strutturazione di una pagina in HTML, viene definito come <strong>l'elemento contenitore
+              per eccellenza</strong>. 
+              Infatti, viene utilizzato, piuttosto che per contenere testo e immagini, perla suddivisione strutturale della pagina.
+              <br>
+              <p>
+                <img src="images/esempio-div.png" 
+                     alt="esempio div"
+                     title="Esempio del tag DIV">
+              </p>
+              Il tag <code>< span ></code> invece è un contenitore generico che viene utilizzato ad esempio all'interno 
+              dei <code>div</code>. A differenzo dei tag <br><code>< p ></code> e <code>< div ></code> si tratta di un 
+              elemento <strong>inline</strong>, ovvero che non va a capo e conitnua sulla stessa linea del tag che lo chiude.
+              Infatti, viene spesso utilizzato per contenere del testo, e viene spesso usato con l'ausilio del file CSS, 
+              ad esempio epr definire lo stile di areee di testo.
+              <p>
+                <img src="images/esempio-span.png" 
+                     alt="esempio div"
+                     title="Esempio del tag DIV">
+              </p>
+              Oltre questi due tag più generici, ve ne sono altri correlati alla pagina da un punto
+              di vista più semantico che funzionale.
+              Infatti, non ci sono molte differenze tra le propietà di questi tag, ma cambia solamente il nome.
+              Alcuni esempi possono essere: <code>< nav ></code>, usato per creare una barra di navigazione, <code>< aside ></code>,
+              usata per aggiungere una parte di contenuto che è legato al contenuto, ma posto a lato. Ancora, 
+              il tag <code>< header ></code> usato per creare un'intestazione alla pagina HTML, l'"opposto" di questo tag
+              potrebbe essere <code>< footer ></code>, che serve per creare una sorta di piè di pagina. Infine, il tag
+              <code>< main ></code> viene a volte utilizzato per contenere tutto il contenuto della pagina, anche se 
+              spesso viene utilizzato semplicemente il tag <code>< body ></code>. La sintassi di questi tag rimane
+              invariata rispetto a quella dei precedenti.
+
+            </p>
           </div>
           <hr>
           <div id="altri-tag">
