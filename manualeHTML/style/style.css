@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 #top-btn {
   position: fixed;
   right: 65px;
@@ -57,7 +61,7 @@
 
 #elenco {
   width: 14%;
-  height: 97%;
+  height: 96%;
   background-color: lightgrey;
   position: fixed; left: 8px; top: 0%;
   border-radius: 20px;
@@ -68,7 +72,7 @@
 #tags {
   background-color: rgb(200, 200, 200);
   width: 95%;
-  height: 360px;
+  height: 280px;
   z-index: 4;
   overflow-y: scroll;
 }
@@ -82,10 +86,14 @@
 
 
 #tab-main {
-  width: 82%;
-  position: absolute; right: 15px;
+  width: 81%;
+  position: absolute; right: 15px; left:18%; top: 10px;
   text-align: center;
   font-size: large;
+  background-color: rgb(244, 244, 244);
+  border-radius: 20px;
+  padding: 10px;
+
 }
 
 #content_tab{
@@ -160,7 +168,8 @@ button {
 
 button:hover {
   text-decoration: underline;
-  background-color: rgba(161, 163, 164, 0.584);
+  transform: scale(1.15);
+  color: rgb(40, 66, 67);
 }
 
 body {
@@ -198,5 +207,5 @@ h3 {
   background-color: lightgray;
   width: 40%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
 }
